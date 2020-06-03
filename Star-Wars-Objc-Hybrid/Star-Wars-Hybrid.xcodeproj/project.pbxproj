@@ -15,6 +15,7 @@
 		BD10103F237A411F002426B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD10103E237A411F002426B7 /* Main.storyboard */; };
 		BD101042237A4130002426B7 /* LSIPersonSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD101041237A4130002426B7 /* LSIPersonSearchTableViewController.m */; };
 		BD101045237A42C9002426B7 /* LSIPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = BD101043237A42C9002426B7 /* LSIPerson.m */; };
+		D798AFE82487479500950B07 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8BA117242981D80081039A /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,6 +187,7 @@
 				BD101038237A40C0002426B7 /* main.m in Sources */,
 				BD10102A237A40BE002426B7 /* SceneDelegate.m in Sources */,
 				BD101042237A4130002426B7 /* LSIPersonSearchTableViewController.m in Sources */,
+				D798AFE82487479500950B07 /* PersonController.swift in Sources */,
 				BD101045237A42C9002426B7 /* LSIPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
