@@ -22,7 +22,7 @@
     if (self = [super init]) {
         _internalContacts = [[NSMutableArray alloc] init];
       
-        Contact *contact = [[Contact alloc] initWithName: @"Aaron" relationship:@"Me"];
+        LSIContact *contact = [[LSIContact alloc] initWithName: @"Aaron" relationship:@"Me"];
         [_internalContacts addObject:contact];
     }
     return self;

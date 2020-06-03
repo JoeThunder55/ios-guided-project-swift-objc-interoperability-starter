@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@class Contact;
+@class LSIContact;
 
 NS_ASSUME_NONNULL_BEGIN
 //Changes Name in OBJC if we refactor in Swift
@@ -16,7 +16,7 @@ NS_SWIFT_NAME(LSIContactsController)
 
 @interface LSIContactsController : NSObject
 
-@property (nonatomic, readonly, copy) NSArray<Contact *> *contacts;
+@property (nonatomic, readonly, copy) NSArray<LSIContact *> *contacts;
 
 @end
 
