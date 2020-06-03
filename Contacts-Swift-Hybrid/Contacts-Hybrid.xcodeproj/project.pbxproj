@@ -13,6 +13,7 @@
 		BD36BE0423A7F27C00ED64BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD36BE0323A7F27C00ED64BD /* Assets.xcassets */; };
 		BD36BE0723A7F27C00ED64BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD36BE0523A7F27C00ED64BD /* LaunchScreen.storyboard */; };
 		BD36BE1123A7F2E200ED64BD /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD36BE1023A7F2E200ED64BD /* ContactsTableViewController.swift */; };
+		D798AFE22487371200950B07 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = D798AFE12487371200950B07 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BD36BE0623A7F27C00ED64BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD36BE0823A7F27C00ED64BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD36BE1023A7F2E200ED64BD /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		D798AFE12487371200950B07 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BD36BE0323A7F27C00ED64BD /* Assets.xcassets */,
 				BD36BE0523A7F27C00ED64BD /* LaunchScreen.storyboard */,
 				BD36BE0823A7F27C00ED64BD /* Info.plist */,
+				D798AFE12487371200950B07 /* Contact.swift */,
 			);
 			path = "Contacts-Hybrid";
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D798AFE22487371200950B07 /* Contact.swift in Sources */,
 				BD36BDFB23A7F27B00ED64BD /* AppDelegate.swift in Sources */,
 				BD36BE1123A7F2E200ED64BD /* ContactsTableViewController.swift in Sources */,
 				BD36BDFD23A7F27B00ED64BD /* SceneDelegate.swift in Sources */,
