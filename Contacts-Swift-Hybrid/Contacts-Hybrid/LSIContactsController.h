@@ -11,6 +11,8 @@
 @class Contact;
 
 NS_ASSUME_NONNULL_BEGIN
+//Changes Name in OBJC if we refactor in Swift
+NS_SWIFT_NAME(LSIContactsController)
 
 @interface LSIContactsController : NSObject
 
