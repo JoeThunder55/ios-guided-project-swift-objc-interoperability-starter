@@ -33,10 +33,25 @@ class PersonController: NSObject {
             }
             
             guard let data = data else {
-                return completion(nil, APIError.DataNilError)
+                DispatchQueue.main.async {
+                    completion(nil, APIError.DataNilError)
+                }
+                 return
+            }
+            do {
+                guard let dictionary = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] else {
+                    throw APIError.JSONDecodeError
+                }
+                guard let personDictionaries = dictionary["results"] as? [[String: Any]] else {
+                    throw APIError.JSONMissingResults
+                }
+                let people = personDictionaries.compactMap { Person
+                }
+            } catch {
+                APIError.JSONMissingResults
+                return
             }
             
-            // TODO: Decode the JSON
             
         }.resume()
     }
