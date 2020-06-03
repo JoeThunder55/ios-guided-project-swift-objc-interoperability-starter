@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Star_Wars_Hybrid-Swift.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

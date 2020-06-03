@@ -7,6 +7,7 @@
 //
 
 #import "LSIPersonSearchTableViewController.h"
+#import "LSIPerson.h"
 
 // TODO: 1. Add both PersonController.swift and PersonTableViewCell.swift to the target
 // TODO: 2. Fix the missing class using the bridging header issue
@@ -14,7 +15,7 @@
 
 @interface LSIPersonSearchTableViewController () <UISearchBarDelegate>
 
-// TODO: Create a PersonController.swift and make it an instance variable
+@property (nonatomic) NSArray<LSIPerson *> *people;
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 
@@ -46,10 +47,14 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     
-	
-	// TODO: Search for a person using the searchBar.text
-    
-	// TODO: Save the result and have the UI update itself
+    [LSIPersonController.shared searchForPeopleWith:searchBar.text
+                                         completion:^(NSArray<LSIPerson *> *people, NSError *error) {
+        if (error) {
+            NSLog(@"Error searching for %@: %@", searchBar.text, error);
+        }
+        self.people = people;
+        [self.tableView reloadData];
+    }];
 }
 
 @end
