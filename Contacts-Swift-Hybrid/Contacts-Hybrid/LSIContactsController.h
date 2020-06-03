@@ -16,7 +16,11 @@ NS_SWIFT_NAME(LSIContactsController)
 
 @interface LSIContactsController : NSObject
 
-@property (nonatomic, readonly, copy) NSArray<LSIContact *> *contacts;
+@property (nonatomic, readonly, copy, nonnull) NSArray<LSIContact *> *contacts;
+
+- (nonnull LSIContact *)contactAtIndex:(NSInteger)index;
+
+@property (nonatomic, readonly) NSInteger contactCount;
 
 @end
 
